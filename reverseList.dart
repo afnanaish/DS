@@ -1,4 +1,5 @@
 import 'dart:io'; // to use   stdout.write()
+import 'stack.dart';
 void main() {
 
   List <String> myList = ['a','f','n','a','n'];
@@ -25,14 +26,3 @@ void reverse (List <dynamic> myList){
 
 }
 
-class Stack<E> {
-  Stack() : element = <E>[];
-  final List<E> element;
-
-  void push(E nelement) => element.add(nelement);
-
-  E pop() => element.removeLast();
-
-  bool get isEmpty => element.isEmpty;
-
-}
